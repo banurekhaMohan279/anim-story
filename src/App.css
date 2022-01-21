@@ -60,3 +60,7 @@
 .hide{
   display: none;
 }
+
+.Info-icon:hover+.popup{
+  display:block;
+}
