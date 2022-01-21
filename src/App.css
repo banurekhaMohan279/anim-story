@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
@@ -24,6 +25,7 @@
   color: white;
 }
 
+/*Page 1*/
 .App-header p {
   animation: stepsanim 4s steps(4,start);
 }
@@ -37,15 +39,24 @@
   }
 }
 
-.App-link {
-  color: #61dafb;
+.info-container{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup{
+  position: absolute;
+  top: -75%;
+  right: 50%;
+  width: 200px;
+  color: #fff;
+  background: #78a1d1;
+  padding: 5%;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+
+.hide{
+  display: none;
 }
