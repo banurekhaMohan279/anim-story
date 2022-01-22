@@ -64,3 +64,23 @@
 .Info-icon:hover+.popup{
   display:block;
 }
+
+.arrow{
+  width: 4vw;
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  animation: arrowanim 0.5s steps(3, start) 4s;
+}
+
+@keyframes arrowanim {
+  0%{
+    transform:rotate(45deg);
+  }
+  50%{
+    transform : rotate(-45deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}

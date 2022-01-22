@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Info from './info.js';
+import Arrow from './arrow.js';
 
 function App() {
   let data = `With just CSS, keyframes
@@ -14,6 +15,7 @@ function App() {
         </p>
 
       </header>
+      <Arrow/>
       <Info data = {data}/>
     </div>
   );
