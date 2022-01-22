@@ -68,6 +68,7 @@
 .arrow{
   width: 4vw;
   position: absolute;
+  cursor: pointer;
   right: 0;
   bottom: 45%;
   animation: arrowanim 0.5s steps(3, start) 4s;
