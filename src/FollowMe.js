@@ -1,8 +1,7 @@
+import Info from './info.js';
 
 function FollowMe(){
-  /*let el = document.querySelector(".FollowMeTxt");
-  let ms = 1000;
-  let dist = 25;*/
+
   function MoveText(e, ms, dist){
     let el = e.currentTarget;
     let distance = el.getBoundingClientRect().left + dist;
@@ -12,10 +11,14 @@ function FollowMe(){
     el.style.transitionTimingFunction = 'ease';
     el.style.cursor = 'pointer';
   }
+  let data = 'Pure JS animation - FB question. Try without transitionTimingFunction'
   return(
-    <div className = 'FollowMeDiv'>
-      <p className = 'FollowMeTxt' onClick = { (e) => MoveText(e, 1000, 50)}> Follow me! </p>
-    </div>
+    <>
+      <div className = 'FollowMeDiv'>
+        <p className = 'FollowMeTxt' onClick = { (e) => MoveText(e, 1000, 50)}> Follow me! </p>
+      </div>
+      <Info data = {data}/>
+    </>
   )
 }
 
